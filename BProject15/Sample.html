@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="inp" />
+    <input type="text" />
+    <label style="display: none" id="error">Enter minimum 4 charectors</label>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#inp").blur(function () { //The blur event is triggered when the input field loses focus
+          var text = $(this).val();
+          if (text.length < 4) {
+            // alert("Enter minimum charectors");
+            $("#error").show();
+          } else {
+            $("#error").hide();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

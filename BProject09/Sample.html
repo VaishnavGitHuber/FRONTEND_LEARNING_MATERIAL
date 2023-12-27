@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="show()">Click me</button>
+
+    <script>
+      function show() {
+        display();
+        console.log("Button clicked");
+        var a = 1;
+        var b = 3;
+        var sum = a + b;
+        console.log("SUM OF 1 AND 3 = " + sum);
+        let d = 5;
+        d = 8;
+        console.log("Values of d is " + d);
+        const con = 49;
+        console.log(con);
+
+        if (con % 2 == 0) {
+          console.log("IT is a even number");
+        } else {
+          console.log("NUmber is odd");
+        }
+
+        for (var i = 0; i < 10; i++) {
+          console.log(i);
+        }
+
+        var arr = ["Apple", 39, false];
+        console.log(arr);
+
+        var obj = [
+          {
+            names: "Nikil",
+            Age: 18,
+            place: "Malapuram",
+          },
+          {
+            names: "vaishnav",
+            Age: 32,
+            place: "tly",
+          },
+        ];
+        console.log(obj);
+        console.log(obj[0].names);
+        console.log(obj[1].place);
+      }
+
+      function display() {
+        console.log("Hello World");
+      }
+    </script>
+  </body>
+</html>

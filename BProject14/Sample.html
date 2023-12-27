@@ -1,0 +1,86 @@
+<!-- queries are the backbone of dynamic web development -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click me</button>
+    <button></button>
+    <div style="width: 300px; height: 100px; background: green" id="box"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          //alert("Button Clicked");
+          //$("#box").hide();
+          //$("#box").toggle(3000);
+          $("#box").fadeToggle(2000);
+        });
+        $("#btn").mouseenter(function () {
+          $(this).css({ background: "red" });
+        });
+        $("#btn").mouseleave(function () {
+          $(this).css({ background: "green" });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+<body>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" ><br><br>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const name = form.elements.name.value;
+      const email = form.elements.email.value;
+      const password = form.elements.password.value;
+
+      if (name === "" || email === "" || password === "") {
+        message.textContent = "All fields are required.";
+        message.style.color = "red";
+      } else {
+        message.textContent = "Form submitted successfully!";
+        message.style.color = "green";
+      }
+    });
+  </script>
+</body>
+</html>
+-->
