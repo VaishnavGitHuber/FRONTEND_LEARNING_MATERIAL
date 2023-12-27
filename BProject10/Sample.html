@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="number" id="phone">
+    <input type="text" id='adress'>
+    <h1 id="opname">1</h1>
+    <h2 id="opnumber">2</h2>
+    <h3 id="opadress">3</h3>
+    <button onclick="show()">Click me</button>
+  
+   <script>
+    function show(){
+    var Name = document.getElementById('name').value
+    var Num = document.getElementById('phone').value
+    var Add = document.getElementById('adress').value
+    document.getElementById('opname').innerHTML = Name
+    document.getElementById('opnumber').innerHTML = Num
+    document.getElementById('opadress').innerHTML = Add
+    }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="inp" />
+    <button onclick="display()">Click me</button>
+    <h1 id="heading"></h1>
+
+    <script>
+      function display() {
+        var text = document.getElementById("inp").value;
+        document.getElementById("heading").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
+-->
